@@ -18,12 +18,7 @@ main {
 /* here is left side section */
 .left {
   width: 100%;
-}
-.top-image {
-  background-color: #f5c04485;
-  width: fit-content;
-  border-radius: 100%;
-  z-index: -6;
+  position: relative;
 }
 
 .left ul li {
@@ -45,6 +40,17 @@ main {
   position: relative;
   top: 6px;
   right: 5px;
+}
+.page-icon{
+  width: 53px;
+  position: absolute;
+    top: 24px;
+    left: 23px;
+    background-color: gold;
+    border-radius: 100%;
+}
+.main-icon{
+  width: 100px;
 }
 /* finished left side section */
 
