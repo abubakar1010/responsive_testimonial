@@ -1,111 +1,118 @@
-*{
-    
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-main{
-    background-color: #FAFAF9;
-    width: 80%;
-    height: 600px;
-    margin: 40px auto;
-    
+/* here is main section */
+main {
+  background-color: #fafaf9;
+  width: 80%;
+  height: 600px;
+  margin: 40px auto;
 }
-.container{
-    padding: 80px 40px;
-    display: flex;
-    flex: 1;
-    gap: 20px;
+.container {
+  padding: 80px 40px;
+  display: flex;
+  flex: 1;
+  gap: 20px;
 }
-.left{
-    width: 100%;
-}
-.right{
-    width: 100%;
+/* here is left side section */
+.left {
+  width: 100%;
 }
 .top-image {
-    background-color: #f5c04485;
-    width: fit-content;
-    border-radius: 100%;
-    z-index: -6;
+  background-color: #f5c04485;
+  width: fit-content;
+  border-radius: 100%;
+  z-index: -6;
 }
 
-.left ul li{
-    list-style: none;
+.left ul li {
+  list-style: none;
 }
 
-
-.section-title{
-    font-size: 2em;
-    margin: 15px 0px;
+.section-title {
+  font-size: 2em;
+  margin: 15px 0px;
 }
 
-.section-description{
-    padding-right: 71px;
-    line-height: 25px;
-    margin: 20px 0px;
+.section-description {
+  padding-right: 71px;
+  line-height: 25px;
+  margin: 20px 0px;
 }
 
-.icon{
-    position: relative;
-    top: 6px;
-    right: 5px;
+.icon {
+  position: relative;
+  top: 6px;
+  right: 5px;
+}
+/* finished left side section */
+
+/* here is right section */
+.right {
+  width: 100%;
+}
+.google-icon,
+.meta-icon {
+  width: 80px;
+}
+.google,
+.meta {
+  background-color: #ffffff;
+  width: 288px;
+  height: 110px;
+  margin: 20px 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px #2e2525;
+  border-radius: 5px;
 }
 
-.google-icon , .meta-icon {
-    width: 80px;
-}
-.google, .meta{
-    background-color: #FFFFFF;
-    width: 288px;
-    height: 110px;
-    margin: 20px 20px;
-    padding: 20px;
-    box-shadow: 5px 5px 10px #2e2525;
-    border-radius: 5px;
+.google {
+  float: right;
 }
 
-.google{
-    float: right;
+.meta {
+  float: left;
 }
 
-.meta{
-    float: left;
+.star-icon {
+  position: relative;
+  bottom: 3px;
+  left: 5px;
 }
 
-.star-icon{
-    position: relative;
-    bottom: 3px;
-    left: 5px;
+.reviewer {
+  margin-bottom: 5px;
 }
 
-.reviewer{
-    margin-bottom: 5px;
-}
+/* finished right side section */
 
-/* responsive media query */
+/* here is media query */
 
 @media screen and (max-width: 640px) {
-    .container{
-        flex-direction: column;
-        padding-top: 20px;
-        padding-left: 15px;
-        
-    }
+  .container {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
 
-    main{
-        height: 100%;
-        width: 100%;
-        margin: 0;
-    }
-    .left{
-       margin-left: 30px;
-       margin-top: 30px;
-    }
+  main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .left {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 
-    .right{
-        margin-top: 80px;
-    }
-    .google,.meta{
-       margin: 20px 10px;
-    }
+  .right {
+    margin-top: 80px;
+  }
+  .google,
+  .meta {
+    margin: 20px 10px;
+  }
 }
+
+/* finished media query */
